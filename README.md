@@ -9,19 +9,19 @@ Desafio de Backend do Itau encontrado no ![GitHUb](https://github.com/feltex/des
 > ## 2.1. Restrições Técnicas
 >Seu projeto:
 >
->   DEVE estar no GitHub ou GitLab
->   NÃO DEVE fazer fork de nenhum outro projeto
->   DEVE ter pelo menos 1 commit por cada endpoint (mínimo de 3 commits)
+>   - DEVE estar no GitHub ou GitLab
+>   - NÃO DEVE fazer fork de nenhum outro projeto
+>   - DEVE ter pelo menos 1 commit por cada endpoint (mínimo de 3 commits)
 >   Queremos ver a evolução do seu projeto com o tempo ;)
 >   Todos os commits DEVEM ser feitos pelo mesmo usuário que criou o projeto
 >   Entendemos que algumas pessoas tem usuários pessoais e profissionais, ou um usuário diferente usado para   estudar. Atenção com isso se você for uma dessas pessoas!
->   DEVE seguir exatamente os endpoints descritos a seguir
+>   - DEVE seguir exatamente os endpoints descritos a seguir
 >   Por exemplo, /transacao não é a mesma coisa que /transacoes
->   DEVE aceitar e responder com objetos exatamente como descritos a seguir
+>   - DEVE aceitar e responder com objetos exatamente como descritos a seguir
 >   Por exemplo, dataHora não é a mesma coisa que data-hora ou dtTransacao
->   NÃO DEVE utilizar quaisquer sistemas de banco de dados (como H2, MySQL, PostgreSQL, ...) ou cache (como Redis, Memcached, Infinispan, ...)
->   DEVE armazenar todos os dados em memória
->   DEVE aceitar e responder apenas com JSON
+>   - NÃO DEVE utilizar quaisquer sistemas de banco de dados (como H2, MySQL, PostgreSQL, ...) ou cache (como Redis, Memcached, Infinispan, ...)
+>   - DEVE armazenar todos os dados em memória
+>   - DEVE aceitar e responder apenas com JSON
 >   Atenção! Por motivos de segurança, não podemos aceitar projetos enviados como arquivos. Você DEVE disponibilizar seu projeto publicamente para que possamos acessá-lo e corrigi-lo! Após receber uma resposta de nós, sinta-se livre para tornar seu projeto privado :)
 >
 >## 2.2. Endpoints da API
@@ -34,6 +34,7 @@ Desafio de Backend do Itau encontrado no ![GitHUb](https://github.com/feltex/des
 >    "valor": 123.45,
 >    "dataHora": "2020-08-07T12:34:56.789-03:00"
 >}
+>
 >Os campos no JSON acima significam o seguinte:
 >
 >| Campo      | Significado                                                   | Obrigatório? |
@@ -74,6 +75,7 @@ Desafio de Backend do Itau encontrado no ![GitHUb](https://github.com/feltex/des
 >    "min": 12.34,
 >    "max": 123.56
 >}
+
 >Os campos no JSON acima significam o seguinte:
 >
 >|  Campo  | Significado                                                   | Obrigatório? |
