@@ -34,7 +34,7 @@ Desafio de Backend do Itau encontrado no ![GitHUb](https://github.com/feltex/des
 >    "valor": 123.45,
 >    "dataHora": "2020-08-07T12:34:56.789-03:00"
 >}
->
+>```
 >Os campos no JSON acima significam o seguinte:
 >
 >| Campo      | Significado                                                   | Obrigatório? |
@@ -76,7 +76,7 @@ Desafio de Backend do Itau encontrado no ![GitHUb](https://github.com/feltex/des
 >    "min": 12.34,
 >    "max": 123.56
 >}
->
+>```
 >Os campos no JSON acima significam o seguinte:
 >
 >|  Campo  | Significado                                                   | Obrigatório? |
