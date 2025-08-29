@@ -66,7 +66,8 @@ Desafio de Backend do Itau encontrado no ![GitHUb](https://github.com/feltex/des
 >   - 200 OK sem nenhum corpo
 >Todas as informações foram apagadas com sucesso
 >## 2.2.3. Calcular Estatísticas: GET /estatistica
->Este endpoint deve retornar estatísticas das transações que aconteceram nos últimos 60 segundos (1 minuto). As estatísticas que devem ser calculadas são:
+>Este endpoint deve retornar estatísticas das transações que aconteceram nos últimos 60 segundos (1 minuto). >As estatísticas que devem ser calculadas são:
+>
 >```json
 >{
 >    "count": 10,
@@ -75,7 +76,7 @@ Desafio de Backend do Itau encontrado no ![GitHUb](https://github.com/feltex/des
 >    "min": 12.34,
 >    "max": 123.56
 >}
-
+>
 >Os campos no JSON acima significam o seguinte:
 >
 >|  Campo  | Significado                                                   | Obrigatório? |
@@ -85,7 +86,7 @@ Desafio de Backend do Itau encontrado no ![GitHUb](https://github.com/feltex/des
 >| `avg`   | **Média do valor** transacionado nos últimos 60 segundos      | Sim          |
 >| `min`   | **Menor valor** transacionado nos últimos 60 segundos         | Sim          |
 >| `max`   | **Maior valor** transacionado nos últimos 60 segundos         | Sim          |
->>**Dica:** Há um objeto no Java 8+ chamado `DoubleSummaryStatistics` que pode lhe ajudar ou servir de inspiração.
+>**Dica:** Há um objeto no Java 8+ chamado `DoubleSummaryStatistics` que pode lhe ajudar ou servir de inspiração.
 >
 >Como resposta, espera-se que este endpoint responda com:
 >
