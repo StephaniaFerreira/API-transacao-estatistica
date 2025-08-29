@@ -33,7 +33,7 @@ public class TransacaoEstatisticaController : ControllerBase
 
         return Created("/transacao", "Transacao Criada com Sucesso!");
     }
-    
+
     [HttpDelete("DELETE/transacao")]
     public IActionResult DeletarTransacao()
     {
@@ -44,11 +44,30 @@ public class TransacaoEstatisticaController : ControllerBase
 
         }
         catch (Exception e)
+        {
+            return BadRequest();
+        }
+
+
+        return Ok();
+    }
+    
+    [HttpGet("GET/estatistica")]
+    public IActionResult GetEstatistica()
+    {
+        Estatistica estatistica = new Estatistica();
+        TransacaoEstatisticaService service = new TransacaoEstatisticaService();
+        try
+        {
+            estatistica = service.GetEstatistica();
+
+        }
+        catch (Exception e)
         { 
             return BadRequest();
         }
 
         
-        return Ok();
+        return Ok(estatistica);
     }
 }
