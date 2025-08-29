@@ -1,3 +1,4 @@
+using System.Runtime.ConstrainedExecution;
 using transacao_estatistica.Models;
 
 namespace transacao_estatistica.Service;
@@ -5,11 +6,19 @@ namespace transacao_estatistica.Service;
 
 public class TransacaoEstatisticaService
 {
+    private static List<Request> TrasacoesFeitas = new List<Request>();
     public void validarTransacao(Request body)
     {
-            validarPreenchimentoObrigatorio(body);
-            validarDataHora(body);
-            validarValor(body);
+        validarPreenchimentoObrigatorio(body);
+        validarDataHora(body);
+        validarValor(body);
+
+        TrasacoesFeitas.Add(body);
+    }
+
+    public void deletarTransacoes()
+    {
+        TrasacoesFeitas.RemoveRange(0,TrasacoesFeitas.Count);
     }
 
     private void validarPreenchimentoObrigatorio(Request body)
