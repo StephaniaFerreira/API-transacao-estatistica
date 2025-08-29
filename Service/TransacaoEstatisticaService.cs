@@ -27,13 +27,13 @@ public class TransacaoEstatisticaService
         //converter a diferença de segundo para minuto
         double Diferenca_minutos = DIFERENCA_SEGUNDO / 60; 
         Estatistica estatistica = new Estatistica();
-        List<Request> transacoes = TrasacoesFeitas.Where(p => (DateTime.Now - p.dataHora).TotalMinutes <= Diferenca_minutos)
+        List<Request> transacoesSelecionadas = TrasacoesFeitas.Where(p => (DateTime.Now - p.dataHora).TotalMinutes <= Diferenca_minutos)
                                                     .ToList();
-        estatistica.count = transacoes.Count;
-        estatistica.sum = sum(transacoes);
+        estatistica.count = transacoesSelecionadas.Count;
+        estatistica.sum = sum(transacoesSelecionadas);
         estatistica.avg = avg(estatistica.sum, estatistica.count);
-        estatistica.min = min(transacoes);
-        estatistica.max = max(transacoes);
+        estatistica.min = min(transacoesSelecionadas);
+        estatistica.max = max(transacoesSelecionadas);
 
         return estatistica;
     }
